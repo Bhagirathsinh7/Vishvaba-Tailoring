@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vishva Tailoring</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="brand">VISHVA <span>TAILORING</span></div><nav><a href="#services">Services</a><a href="#order">Place Order</a><a href="#manager">Manager</a></nav></header>
+<main>
+<section class="hero"><p class="eyebrow">PERFECT FIT • BEAUTIFUL FINISH</p><h1>Stitching made<br><em>with care.</em></h1><p>Blouse stitching, alterations and custom tailoring.</p><a class="button" href="#order">Place an Order</a></section>
+<section id="services"><h2>Our Services</h2><div id="service-list" class="cards"><p>Loading services…</p></div></section>
+<section id="order"><h2>Place Your Order</h2><form id="order-form">
+<label>Customer name<input name="name" required></label><label>Mobile number<input name="mobile" inputmode="tel" required></label>
+<label>Work details<textarea name="details" required></textarea></label><div class="two"><label>Order date<input name="orderDate" type="date" required></label><label>Delivery date<input name="deliveryDate" type="date"></label></div>
+<label>Estimated amount (₹)<input name="amount" type="number" min="0" required></label><button class="button">Submit Order</button><p id="order-status" role="status"></p></form></section>
+<section id="manager"><h2>Manager Area</h2><p class="muted">Manager access is enabled after Firebase setup. Do not publish passwords in website code.</p>
+<form id="login-form"><label>Manager email<input name="email" type="email" required></label><label>Password<input name="password" type="password" required></label><button class="button">Manager Login</button><p id="login-status" role="status"></p></form>
+<div id="manager-panel" hidden><h3>Orders</h3><div id="orders-list"></div><h3>Add / Update Service</h3><form id="service-form"><label>Service name<input name="name" required></label><label>Price (₹)<input name="price" type="number" min="0" required></label><label>Description<input name="description"></label><button class="button">Save Service</button></form><h3>Bill</h3><div id="bill-area"><p>Select an order to prepare a bill.</p></div><button id="print-bill" class="button" type="button">Print Bill</button></div>
+</section>
+</main><footer>© <span id="year"></span> Vishva Tailoring</footer>
+<script type="module" src="app.js"></script>
+</body></html>
